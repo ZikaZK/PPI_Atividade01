@@ -7,6 +7,7 @@ app.listen(porta, host, () => {
 });
 
 app.get('/', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
     res.write(`
         <DOCTYPE html>
         <html lang="pt-br">
@@ -24,6 +25,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/reajuste', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
     const idade = parseInt(req.query.idade);
     const sexo = req.query.sexo;
     const salarioBase = parseFloat(req.query.salarioBase);
