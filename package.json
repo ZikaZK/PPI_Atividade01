@@ -1,0 +1,24 @@
+{
+  "name": "ppi_atividade01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZikaZK/PPI_Atividade01.git"
+  },
+  "author": "Gabriel Barros Correia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZikaZK/PPI_Atividade01/issues"
+  },
+  "homepage": "https://github.com/ZikaZK/PPI_Atividade01#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
