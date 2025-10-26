@@ -55,7 +55,7 @@ app.get('/', (req, res) => {
             <h2>Informações:</h2><br><br>
             <p>Idade: ${idade}</p>
             <p>Sexo: ${sexo}</p>
-            <p>Salário base: R$${salarioBase.toFixed()}</p>
+            <p>Salário base: R$${salarioBase.toFixed(2)}</p>
             <p>Ano de contratação: ${anoContratacao}</p>
             <p>Número de matrícula: ${matricula}</p>
             <br>
