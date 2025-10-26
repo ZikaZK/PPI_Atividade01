@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
             <title>Atividade 1</title>
         </head>
         <body>
-        <p>Informe na URL no subdiretório de "reajuste" os seguintes dados: idade, sexo (F ou M), salarioBase, anoContratacao e matricula</p>
+        <p>Informe na URL os seguintes dados: idade, sexo (F ou M), salarioBase, anoContratacao e matricula</p>
     `);
 
     if(!Number.isInteger(idade) || idade <= 16){
