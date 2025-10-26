@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     const salarioBase = parseFloat(req.query.salarioBase);
     const anoContratacao = parseInt(req.query.anoContratacao);
     const matricula = parseInt(req.query.matricula);
-    let guarda = 0;
+    var guarda = 0;
     res.write(`
         <DOCTYPE html>
         <html lang="pt-br">
