@@ -24,7 +24,6 @@ app.get('/', (req, res) => {
             <title>Atividade 1</title>
         </head>
         <body>
-        <p>Informe na URL no subdiretório de "reajuste" os seguintes dados: idade, sexo (F ou M), salarioBase, anoContratacao e matricula</p>
     `);
 
     if(!Number.isInteger(idade) || idade <= 16){
@@ -112,6 +111,8 @@ app.get('/', (req, res) => {
         }
 
         res.write(`<p>Novo salário reajustado: R$${salarioNovo.toFixed(2)}`);
+    } else {
+        res.write(`<p>Informe na URL no subdiretório de "reajuste" os seguintes dados: idade, sexo (F ou M), salarioBase, anoContratacao e matricula</p>`);
     }
 
     res.write(`
