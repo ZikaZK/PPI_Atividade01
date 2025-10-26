@@ -1,7 +1,10 @@
 import express from 'express';
 const app = express();
 const host = 'localhost';
-const porta = 3000;
+const porta = 2500;
+app.listen(porta, host, () => {
+    console.log(`Aplicação escutando em http://${host}:${porta}`);
+});
 
 app.get('/', (req, res) => {
     res.write(`
@@ -130,8 +133,4 @@ app.get('/reajuste', (req, res) => {
         </body>
         </html>    
     `);
-});
-
-app.listen(porta, host, () => {
-    console.log(`Aplicação escutando em http://${host}:${porta}`);
 });
