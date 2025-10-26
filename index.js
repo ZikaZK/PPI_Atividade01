@@ -1,6 +1,6 @@
 import express from 'express';
 const app = express();
-const host = '127.0.0.1';
+const host = 'localhost';
 const porta = 3000;
 app.listen(porta, host, () => {
     console.log(`Aplicação escutando em http://${host}:${porta}`);
