@@ -24,11 +24,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/reajuste', (req, res) => {
-    const idade = req.query.idade;
+    const idade = parseInt(req.query.idade);
     const sexo = req.query.sexo;
-    const salarioBase = req.query.salarioBase;
-    const anoContratacao = req.query.anoContratacao;
-    const matricula = req.query.matricula;
+    const salarioBase = parseFloat(req.query.salarioBase);
+    const anoContratacao = parseInt(req.query.anoContratacao);
+    const matricula = parseInt(req.query.matricula);
     let guarda = 0;
     res.write(`
         <DOCTYPE html>
