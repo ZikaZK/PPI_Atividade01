@@ -39,11 +39,11 @@ app.get('/', (req, res) => {
         res.write('<p>O salário base precisa ser um número real positivo</p>');
         guarda = 1;
     }
-    if(!anoContratacao.isInteger() || anoContratacao <= 1960){
+    if(!Number.isInteger(anoContratacao) || anoContratacao <= 1960){
         res.write('<p>O ano de contratação precisa ser acima de 1960</p>');
         guarda = 1;
     }
-    if(!matricula.isInteger() || matricula < 0){
+    if(!Number.isInteger(matricula) || matricula < 0){
         res.write('<p>O número de matrícula precisa ser um inteiro maior que 0</p>');
         guarda = 1;
     }
