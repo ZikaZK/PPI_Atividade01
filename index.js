@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
         res.write('<p>O sexo está inválido</p>');
         guarda = 1;
     }
-    if(!(typeof salarioBase === 'number' && Number.isFinite(salarioBase) && !Number.isInteger(salarioBase)) || salarioBase < 0){
+    if(isNaN(salarioBase) || salarioBase < 0){
         res.write('<p>O salário base precisa ser um número real positivo</p>');
         guarda = 1;
     }
